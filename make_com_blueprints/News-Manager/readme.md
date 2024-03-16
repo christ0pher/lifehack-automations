@@ -3,6 +3,10 @@
 ## Overview
 This blueprint outlines an automation process designed to manage and transform news content. It integrates with RSS feeds, OpenAI's GPT-4, and Notion, performing tasks from fetching and sentiment analysis of news articles to rewriting and updating Notion pages with transformed news content.
 
+## Watch on youtube
+[![Fixing the news! Curated news articles using OpenAI GPT-4, RSS, Notion and make.com.](http://img.youtube.com/vi/cmWhAVkq8jM/0.jpg)](https://youtu.be/cmWhAVkq8jM "Video Title")
+
+
 ## Workflow
 1. **Start Trigger**: Initiates the scenario.
 2. **Create Current News Page in Notion**: A new Notion page is created daily for storing news articles.
