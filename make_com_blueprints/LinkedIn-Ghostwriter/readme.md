@@ -1,28 +1,30 @@
-# News Manager Automation Blueprint
+# Automated LinkedIn Ghostwriting Blueprint
 
 ## Overview
-This blueprint outlines an automation process designed to manage and transform news content. It integrates with RSS feeds, OpenAI's GPT-4, and Notion, performing tasks from fetching and sentiment analysis of news articles to rewriting and updating Notion pages with transformed news content.
+This blueprint automates the process of generating LinkedIn post proposals, including both carousel and text posts. By leveraging webhooks, article scraping, and OpenAI's GPT-4, it produces engaging content proposals based on extracted article text.
 
 ## Watch on youtube
-[![Fixing the news! Curated news articles using OpenAI GPT-4, RSS, Notion and make.com.](http://img.youtube.com/vi/cmWhAVkq8jM/0.jpg)](https://youtu.be/cmWhAVkq8jM "Video Title")
-
+[![Fixing the news! Curated news articles using OpenAI GPT-4, RSS, Notion and make.com.](http://img.youtube.com/vi/jfASh-S-09o/0.jpg)](https://youtu.be/jfASh-S-09o "Video Title")
 
 ## Workflow
-1. **Start Trigger**: Initiates the scenario.
-2. **Create Current News Page in Notion**: A new Notion page is created daily for storing news articles.
-3. **Fetch RSS Feeds from Notion Database**: Retrieves URLs of RSS feeds stored in a Notion database.
-4. **Fetch Current News**: Reads news articles from the fetched RSS URLs.
-5. **Analyse News Sentiment**: Utilizes OpenAI GPT-4 to analyze the sentiment of the fetched news articles.
-6. **Aggregate Positive News**: Aggregates news deemed positive by the sentiment analysis.
-7. **Rewrite News Article**: Rewrites the aggregated news using OpenAI GPT-4, following specified transformation rules.
-8. **Append Article to Notion Page**: Appends the rewritten news content to the designated Notion page.
+1. **Receives a trigger from a custom webhook** to start the process.
+2. **Scrapes the article text** from the provided URL.
+3. **Generates a carousel post proposal** using OpenAI GPT-4, focused on creating a captivating series of slides.
+4. **Generates a text post proposal** with OpenAI GPT-4, crafting an engaging LinkedIn post.
+5. **Saves both carousel and text proposals** to a Notion database for easy access and review.
 
 ## Prerequisites
-- An active Notion account with API access.
-- An OpenAI account with API access for GPT-4.
-- RSS feed URLs stored in a Notion database for news sources.
+- A custom webhook setup to trigger the process.
+- ScrapeNinja for article text scraping.
+- OpenAI GPT-4 access for generating post proposals.
+- A Notion database to store the generated proposals.
 
 ## Features
-- Automated fetching and sentiment analysis of news articles.
-- AI-powered content transformation and rewriting.
-- Dynamic updating of Notion pages with transformed news content.
+- Automatic initiation through webhooks.
+- Dynamic content generation with article scraping and AI.
+- Dual proposal outputs: carousel and text post formats.
+- Organized tracking and storage in Notion.
+
+
+
+
